@@ -7,7 +7,7 @@ const middleware_url = process.env.MIDDLEWARE_URL;
 const Consumer = kafka.Consumer,
   // The client specifies the ip of the Kafka producer and uses
   // the zookeeper port 2181
-  client = new kafka.KafkaClient("158.176.113.93:2181"),
+  client = new kafka.KafkaClient("broker-zookeeper-client.debezium:2181"),
   // The consumer object specifies the client and topic(s) it subscribes to
   consumer = new Consumer(
     client,
